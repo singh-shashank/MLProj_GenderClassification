@@ -34,3 +34,4 @@ TrainTable=cell2table(TrainData);
 TestTable = cell2table(TestData);
 writetable(TrainTable,'RawTweetsTraining.txt','Delimiter','\t')
 writetable(TestTable,'RawTweetsTesting.txt','Delimiter','\t')
+system('copy RawTweetsTraining.txt+RawTweetsTesting.txt combinedTweets.txt')
