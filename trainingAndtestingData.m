@@ -11,6 +11,6 @@ TestData{i,1} = Data{i,1};
 end
 TrainTable=cell2table(TrainData);
 TestTable = cell2table(TestData);
-writetable(TrainTable(2:trainSize,1),'RawTweetsTraining.txt','Delimiter','\t');
-writetable(TestTable(2:sizeTest,1),'RawTweetsTesting.txt','Delimiter','\t');
+writetable(TrainTable(2:trainSize,1),'RawTweetsTraining.txt','WriteVariableNames',false,'Delimiter','\t');
+writetable(TestTable(2:sizeTest,1),'RawTweetsTesting.txt','WriteVariableNames',false,'Delimiter','\t');
 end
