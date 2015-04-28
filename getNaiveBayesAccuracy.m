@@ -1,3 +1,14 @@
-trainingSet = 'Testingtweets_without_RT_final_prune';
-probabilitiesSet = 'fs_wordsWithHashtags_1gm_trng';
-accuracy = genderDetectionUsingNaiveBayes(trainingSet,probabilitiesSet);
+trainingSet = 'Trainingtweets_without_RT_final_prune';
+testingSet = 'Testingtweets_without_RT_final_prune';
+probabilitiesSet1 = 'fs_obsceneJunkWords_1gm_trng';
+probabilitiesSet2 = 'fs_remainingWords_1gm_trng';
+probabilitiesSet3 = 'fs_wordsBelowThreshold_1gm_trng';
+probabilitiesSet4 = 'fs_wordsWithHashtags_1gm_trng';
+accuracy1 = genderDetectionUsingNaiveBayes(trainingSet,probabilitiesSet1);
+accuracy2 = genderDetectionUsingNaiveBayes(trainingSet,probabilitiesSet2);
+accuracy3 = genderDetectionUsingNaiveBayes(trainingSet,probabilitiesSet3);
+accuracy4 = genderDetectionUsingNaiveBayes(trainingSet,probabilitiesSet4);
+accuracy5 = genderDetectionUsingNaiveBayes(testingSet,probabilitiesSet1);
+accuracy6 = genderDetectionUsingNaiveBayes(testingSet,probabilitiesSet2);
+accuracy7 = genderDetectionUsingNaiveBayes(testingSet,probabilitiesSet3);
+accuracy8 = genderDetectionUsingNaiveBayes(testingSet,probabilitiesSet4);
