@@ -166,8 +166,8 @@ def main():
 	global wordCountDict
 	global mCount
 	global fCount
-	mCount = 758
-	fCount = 700
+	mCount = 916
+	fCount = 1370
 	# A dictionary with word as the key
 	# and a list as value
 	# list has two coloumns : [female freq, male freq]
@@ -196,6 +196,8 @@ def main():
 	print 'female freq file : ' + femFileName
 	print 'threshold (default is 10) : ' + str(threshold)
 	print 'split feature set :' + str(splitFeatureSet)
+	print 'Number of females : ' + str(fCount)
+	print 'Number of males : ' + str(mCount)
 	print 'Is this correct ? ',
 	ans = str(sys.stdin.read(1))
 	if ans != 'y' and ans != 'Y':

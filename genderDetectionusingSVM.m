@@ -77,7 +77,7 @@ end
 end
 end
 %Testing Set
-if Test_Set_Enabled==1
+if Test_Set_Enabled==0
 [Label_test_original,Label_test_predited,sizeOfTestingSet] = SVMTestData(SVMStructTrain...
                                                                 ,probabilitiesSet,testingSet);
 countMatch=0;
