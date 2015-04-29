@@ -1,3 +1,7 @@
+%Copyright (c) 2012, Vladimir Bondarenko
+%Copyright (c) 2008, The MathWorks, Inc.
+%All rights reserved.
+
 function tweetingSummary(twty,S)
 % Compute some descriptive statistics summarizing users tweeting activity.
 %

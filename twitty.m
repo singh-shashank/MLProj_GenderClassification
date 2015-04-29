@@ -1,3 +1,8 @@
+%Copyright (c) 2012, Vladimir Bondarenko
+%Copyright (c) 2008, The MathWorks, Inc.
+%All rights reserved.
+
+
 classdef twitty < handle
 % Interface-class to the Twitter REST API v1.1.
 %

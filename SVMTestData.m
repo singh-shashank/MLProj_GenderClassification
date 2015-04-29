@@ -28,7 +28,7 @@ featureSet_temp=featureSet_temp - 48;
 featureSet = featureSet_temp(:,1:numberOfFeatures);
 Label_test_original= featureSet_temp(:,numberOfFeatures+1);
 prob_word_for_mf_test = zeros(sizeOfTestingSet,numberOfFeatures);
-prob_word_for_mf_test = horzcat(prob_word_for_mf_test,ones(sizeOfTestingSet,1));
+
 
 fem_prob = mfprob.data(:,1);
 male_prob = mfprob.data(:,2);
@@ -37,5 +37,5 @@ relative_prob = fem_prob./male_prob;
 for i = 1:sizeOfTestingSet
     prob_word_for_mf_test(i,:) = featureSet(i,:) .* relative_prob';
 end
-
-Label_test_predited = svmclassify(SVMStruct,prob_word_for_mf_test,'Showplot',true);
+prob_word_for_mf_test = horzcat(prob_word_for_mf_test,ones(sizeOfTestingSet,1));
+Label_test_predited = svmclassify(SVMStruct,prob_word_for_mf_test);
